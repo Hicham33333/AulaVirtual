@@ -1,0 +1,306 @@
+@charset "UTF-8";
+html {
+  height: auto;
+  width: auto;
+}
+
+body {
+  height: auto;
+  width: 100%;
+  margin: 0%;
+  display: grid;
+  background-color: #444;
+}
+
+#logo {
+  max-height: 100px;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  #logo {
+    max-height: 35px !important;
+  }
+  .column {
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 20px !important;
+  }
+}
+footer {
+  background-image: url("../Img/Fondo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 30px;
+}
+
+.PaginaSeccion {
+  color: white;
+  background-color: #444;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.PaginaSeccion .foroText {
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px 25px;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+.PaginaSeccion .Titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin: 20px;
+  /*  .dropdown {
+      margin-bottom: 0px !important;
+      padding-bottom: 0px !important;
+
+      img {
+        height: 100px !important;
+      }
+      .dropdown-trigger {
+        height: 0px !important;
+      }
+      margin-top: 170px;
+      .dropdown-menu {
+        position: absolute !important;
+        margin-top: 0 !important;
+      }
+    }
+      */
+}
+.PaginaSeccion .Titulo #menu {
+  position: absolute;
+  height: 15%;
+  right: 15px;
+}
+.PaginaSeccion .Titulo .dropdown {
+  position: relative; /* Asegura que el menú se posicione en relación con este div */
+  margin: 0 !important; /* Elimina márgenes adicionales */
+  padding: 0 !important;
+  margin-top: 170px !important;
+  margin-right: 60px !important;
+}
+.PaginaSeccion .Titulo .dropdown-trigger img {
+  height: 100px !important; /* Ajusta según el tamaño necesario */
+  cursor: pointer;
+}
+.PaginaSeccion .Titulo .dropdown-menu {
+  position: absolute !important;
+  top: 75px; /* Ajusta esta distancia según lo necesites */
+  left: 0;
+  margin-top: 0 !important;
+  transform: translateY(0); /* Ajusta si sigue estando desplazado */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  display: none; /* Oculta el menú por defecto */
+}
+.PaginaSeccion .Titulo .dropdown.is-active .dropdown-menu {
+  display: block; /* Muestra el menú cuando está activo */
+}
+@media screen and (max-width: 768px) {
+  .PaginaSeccion .Titulo .dropdown {
+    position: relative; /* Asegura que el menú se posicione en relación con este div */
+    margin: 0 !important; /* Elimina márgenes adicionales */
+    padding: 0 !important;
+    margin-top: 260px !important;
+    margin-right: 60px !important;
+  }
+  .PaginaSeccion .Titulo .dropdown-trigger img {
+    height: 25% !important; /* Ajusta según el tamaño necesario */
+    cursor: pointer;
+  }
+  .PaginaSeccion .Titulo .dropdown-menu {
+    position: absolute !important;
+    top: 75px; /* Ajusta esta distancia según lo necesites */
+    left: 0;
+    margin-top: 0 !important;
+    transform: translateY(0); /* Ajusta si sigue estando desplazado */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    display: none; /* Oculta el menú por defecto */
+  }
+  .PaginaSeccion .Titulo .dropdown.is-active .dropdown-menu {
+    display: block; /* Muestra el menú cuando está activo */
+  }
+}
+.PaginaSeccion .mapa-interactivo {
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  box-shadow: 0 20px 80px rgba(33, 36, 215, 0.2);
+  max-width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+.PaginaSeccion .mapa-interactivo:hover {
+  transform: scale(1.05);
+}
+@media screen and (max-width: 768px) {
+  .PaginaSeccion .Titulo {
+    font-size: 20px;
+  }
+  .PaginaSeccion .Titulo img {
+    height: 10%;
+  }
+}
+.PaginaSeccion .Asignatura {
+  background-color: #333;
+  padding-top: 30px;
+  width: 80%;
+  height: auto;
+  border: solid 3px #2361a8;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+}
+.PaginaSeccion .Asignatura .TituloSeccion {
+  width: 100%;
+  display: flex;
+  align-items: start;
+}
+.PaginaSeccion .Asignatura .TituloSeccion h1 {
+  margin-left: 5%;
+  font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+  .PaginaSeccion .Asignatura .TituloSeccion h1 {
+    margin-left: 5%;
+    font-size: 15px;
+  }
+}
+.PaginaSeccion .Asignatura .linea {
+  width: 90%;
+  border: solid 0.5px #ffffff;
+}
+.PaginaSeccion .Asignatura .Seccion {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+@media screen and (max-width: 768px) {
+  .PaginaSeccion .Asignatura .Seccion {
+    flex-direction: column;
+  }
+}
+.PaginaSeccion .Asignatura .Seccion .descargable {
+  width: 60%;
+}
+@media screen and (max-width: 768px) {
+  .PaginaSeccion .Asignatura .Seccion .descargable {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+.PaginaSeccion .Asignatura .Seccion .descargable .Tarjeta {
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+  height: 50px;
+  margin-left: 5%;
+  background-color: #2361a8;
+}
+.PaginaSeccion .Asignatura .Seccion .descargable .Tarjeta:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  background-color: #104889;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  .PaginaSeccion .Asignatura .Seccion .descargable .Tarjeta {
+    height: 30px;
+    width: 80%;
+  }
+}
+.PaginaSeccion .Asignatura .Seccion .descargable .Tarjeta img {
+  margin: 10px;
+  height: 40px;
+}
+@media screen and (max-width: 768px) {
+  .PaginaSeccion .Asignatura .Seccion .descargable .Tarjeta img {
+    height: 20px;
+  }
+}
+.PaginaSeccion .Asignatura .Seccion .descargable .Tarjeta h3 {
+  font-size: 30px;
+}
+@media screen and (max-width: 768px) {
+  .PaginaSeccion .Asignatura .Seccion .descargable .Tarjeta h3 {
+    font-size: 15px;
+  }
+}
+.PaginaSeccion .Asignatura .Seccion .contenido {
+  margin-left: 100px;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.PaginaSeccion .Asignatura .Seccion .contenido iframe {
+  width: 80%;
+  height: 200px;
+  margin-right: 80px;
+}
+@media screen and (max-width: 768px) {
+  .PaginaSeccion .Asignatura .Seccion .contenido iframe {
+    width: 150%;
+    margin-left: 150px;
+    height: 100px;
+  }
+}
+.PaginaSeccion .botones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.PaginaSeccion .botones button {
+  margin: 10px;
+  color: #ffffff;
+  border-radius: 5px;
+  width: 100px;
+}
+.PaginaSeccion .añadir {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.PaginaSeccion .añadir article {
+  margin: 15px;
+}
+.PaginaSeccion .footers {
+  box-shadow: 0 4px 29px rgba(23, 90, 172, 0.2);
+  padding: 20px;
+  margin-top: 20px;
+  width: 75%;
+}
+.PaginaSeccion .footers h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  color: #2361a8;
+}/*# sourceMappingURL=PaginaSeccion.css.map */

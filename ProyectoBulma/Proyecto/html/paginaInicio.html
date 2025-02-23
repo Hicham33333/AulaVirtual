@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../styles/estructura.css" />
+  <link rel="stylesheet" href="../../bulma/css/bulma.css">
+  <script src="../JavaScript/redireccion.js" defer></script>
+  <script src="../JavaScript/reproducirAudio.js" defer></script>
+  <script src="../JavaScript/AñadirColores.js" defer></script>
+
+  <style>
+    body {
+      background-color: #444;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="navbar has-shadow is-flex is-justify-content-space-between px-4 py-2">
+    <div class="navbar-brand">
+      <a class="navbar-item " href="./paginaInicio.html">
+        <img src="../Img/Logos/logoTitulo.png" alt="Logo" id="logo" style="max-height: 100px; width: auto;">
+      </a>
+    </div>
+
+    <div class="navbar-end is-flex is-align-items-center">
+      <figure class="image is-48x48 mr-3">
+        <img class="is-rounded" src="../Img/Header/fotoPerfil.png"  alt="Foto de Perfil">
+      </figure>
+      <div class="buttons">
+        <a class="button is-white" href="./paginaPerfil.html">
+          <img class="icon" src="../Img/Logos/logo.png"style="width: 38px!important;" alt="Notificaciones">
+        </a>
+        <a class="button is-white" href="./Foro.html">
+          <img class="icon" src="../Img/Header/Mensajes.png"style="width: 38px!important;" alt="Mensajes">
+        </a>
+      <a class="button is-white audioIconoH">
+<img class="icon audioIcono" src="../Img/Header/sonido.png" style="width: 38px!important;" alt="Sonido">
+</a>
+      </div>
+    </div>
+  </header>
+  <audio src="../audios/p_38642444_633.mp3" class="iconosH audioIconoH" style="display: none;"></audio>
+
+  <div class="container">
+    <div class="misAsignaturas has-text-white is-size-2 has-text-centered mb-5">
+      Mis asignaturas
+    </div>
+
+    <div class="columns is-multiline">
+
+      <div class="column is-half imagenAsignatura2">
+        <div class="box has-background-grey-dark p-4" style="position: relative;">
+        
+          <span class="icon is-large has-text-white audioIcono"
+            style="position: absolute; top: 10px; right: 10px; cursor: pointer; z-index: 10;">
+            <img src="../Img/Header/sonido.png" alt="Reproducir audio">
+            <audio src="../audios/ElInglesSeEnseñaMalPunto.mp3"></audio>
+          </span>
+
+
+
+          <div class="image is-4by3"
+            style="background-image: url('../Img/Seccion/ingles.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+          </div>
+          <div class="has-text-white is-size-4 mt-3">Inglés: Se enseña mal y.</div>
+          <div class="level is-mobile mt-3">
+            <div class="level-left">
+              <div class="level-item">Profesor: Ana</div>
+            </div>
+            <div class="level-right">
+              <div class="level-item">15% completado</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-half imagenAsignatura ">
+        <div class="box has-background-grey-dark p-4" style="position: relative;">
+          <span class="icon is-large has-text-white audioIcono"
+            style="position: absolute; top: 10px; right: 10px; cursor: pointer; z-index: 10;">
+            <img src="../Img/Header/sonido.png" alt="Reproducir audio">
+            <audio src="../audios/powerful-emotional-epic-174136.mp3"></audio>
+          </span>
+          <div class="image is-4by3"
+            style="background-image: url('../Img/Seccion/imYARDAS.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+          </div>
+          <div class="has-text-white is-size-4 mt-3"> DWES: objective keep alive</div>
+          <div class="level is-mobile mt-3">
+            <div class="level-left">
+              <div class="level-item">Profesor: Javier Puche</div>
+            </div>
+            <div class="level-right">
+              <div class="level-item">10% completado</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-half imagenAsignatura2 ">
+        <div class="box has-background-grey-dark p-4" style="position: relative;">
+          <span class="icon is-large has-text-white audioIcono"
+          style="position: absolute; top: 10px; right: 10px; cursor: pointer; z-index: 10;">
+          <img src="../Img/Header/sonido.png" alt="Reproducir audio">
+          <audio src="../audios/powerful-emotional-epic-174136.mp3"></audio>
+        </span>
+          <div class="image is-4by3"
+            style="background-image: url('../Img/Seccion/carlengues.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+          </div>
+          <div class="has-text-white is-size-4 mt-3">Bases de datos: Rezale al de arriba</div>
+          <div class="level is-mobile mt-3">
+            <div class="level-left">
+              <div class="level-item">Profesor: Carlos Villaroel </div>
+            </div>
+            <div class="level-right">
+              <div class="level-item">5% completado</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-half imagenAsignatura3 ">
+        <div class="box has-background-grey-dark p-4" style="position: relative;">
+          <span class="icon is-large has-text-white audioIcono"
+          style="position: absolute; top: 10px; right: 10px; cursor: pointer; z-index: 10;">
+          <img src="../Img/Header/sonido.png" alt="Reproducir audio">
+          <audio src="../audios/powerful-emotional-epic-174136.mp3"></audio>
+        </span>
+          <div class="image is-4by3"
+            style="background-image: url('../Img/sorpresa.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+          </div>
+          <div class="has-text-white is-size-4 mt-3">Interfaces: No faltes a clase 💀</div>
+          <div class="level is-mobile mt-3">
+            <div class="level-left">
+              <div class="level-item">Profesor: Pedro Puerma </div>
+            </div>
+            <div class="level-right">
+              <div class="level-item">25% completado</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <footer class="footer has-background-dark" style="height: 250px;">
+    <div class="container is-flex is-flex-direction-column is-justify-content-center is-align-items-center"
+      style="height: 100%;">
+      <figure class="image is-96x96 mb-4">
+        <img src="../Img/Logos/logo.png" alt="Logo">
+      </figure>
+
+      <div class="is-flex is-justify-content-center is-align-items-center mb-4">
+        <figure class="image is-32x32 mx-2">
+          <img src="../Img/Footer/iconoEmail.png" style="height: 32px!important;" alt="Email">
+        </figure>
+        <figure class="image is-32x32 mx-2">
+          <img src="../Img/Footer/iconoGitHub.png" style="height: 32px!important;" alt="GitHub">
+        </figure>
+        <figure class="image is-32x32 mx-2">
+          <img src="../Img/Footer/iconoInstagram.png" style="height: 32px!important;" alt="Instagram">
+        </figure>
+        <figure class="image is-32x32 mx-2">
+          <img src="../Img/Footer/iconoLinkedin.png" style="height: 32px!important;" alt="LinkedIn">
+        </figure>
+      </div>
+
+      <h3 class="has-text-white is-size-6">
+        © 2004-2025 aulavirtual.es - Servicios de Aula Web Premium, Cloud.
+      </h3>
+    </div>
+  </footer>
+</body>
+
+</html>

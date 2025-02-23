@@ -1,0 +1,143 @@
+@use "../../bulma/sass/utilities/mixins" as mixins;
+@import "../../bulma/sass/utilities/mixins";
+
+// Variables
+$primary-color: #2361A8;
+$text-color: white;
+
+// Global styles
+html {
+  height: 99%;
+}
+
+body {
+  height: 100%;
+  background: url("../Img/Fondo.png") center/cover no-repeat;
+}
+
+// General box styles
+.box {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+// Buttons
+.boton {
+  width: 30%;
+  margin-top: 5px;
+  background-color: $primary-color;
+  font-size: 20px;
+  border-radius: 15px;
+  height: 40px;
+  color: $text-color;
+}
+
+.botones {
+  width: 50%;
+  margin-top: 10px;
+}
+
+// Form container
+#form {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  background-color: transparent;
+
+  #botonEnviar {
+    width: 100%;
+    margin-top: 4px;
+  }
+  .iconoError{
+    height: 40px;
+    display: none;
+  }
+
+  input {
+    border: solid $text-color 1px;
+    background: transparent;
+    width: 60%;
+   
+
+    &::placeholder {
+      color: $text-color;
+      font-style: italic;
+      opacity: 1;
+    }
+  }
+  @include mixins.mobile {
+    input{
+      width: 100%;
+    }
+  }
+  .imputError{
+    border: solid red 1px;
+    background: transparent;
+
+    &::placeholder {
+      color: red;
+      font-style: italic;
+      opacity: 1;
+    }
+  }
+}
+
+// Grid container
+.contenedor {
+  display: grid;
+  grid-template-columns: 20% 30% 40% 10%;
+  grid-template-rows: 30% 40% 30%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  #titulo {
+    grid-column: 2 / 3;
+    font-size: 50px;
+    grid-row: 2 / 3;
+    margin-left: 25%;
+    margin-right: 7%;
+    color: white;
+  }
+
+  @include mixins.mobile {
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 10% 35% 35% 10%;
+    input{
+      width: 150%;
+    }
+
+    .linea {
+      display: none;
+    }
+
+    #form {
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+      width: 80%;
+      justify-self: center;
+    }
+
+    #titulo {
+      color: $text-color;
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      font-size: 50px;
+      margin-left: 80px;
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+// Vertical divider
+.linea {
+  position: absolute;
+  left: 47%;
+  bottom: 35%;
+  width: 1px;
+  height: 300px;
+  background-color: $text-color;
+}

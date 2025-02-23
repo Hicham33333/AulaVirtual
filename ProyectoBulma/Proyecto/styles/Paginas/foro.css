@@ -1,0 +1,10 @@
+.foroText {
+    font-family: "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.4;
+  }

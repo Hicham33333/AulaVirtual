@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Centro de Ayuda</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+  <link rel="stylesheet" href="../styles/estructura.css" />
+</head>
+
+<body>
+  <header class="navbar has-shadow is-flex is-justify-content-space-between px-4 py-2" style="background-color: #1a1a1a !important;">
+    <div class="navbar-brand">
+      <a class="navbar-item " href="./paginaInicio.html">
+        <img src="../Img/Logos/logoTitulo.png" alt="Logo" id="logo" style="max-height: 100px; width: auto;">
+      </a>
+    </div>
+
+    <div class="navbar-end is-flex is-align-items-center">
+      <figure class="image is-48x48 mr-3">
+        <img class="is-rounded" src="../Img/Header/fotoPerfil.png"  alt="Foto de Perfil">
+      </figure>
+      <div class="buttons">
+        <a class="button is-white" href="./paginaPerfil.html">
+          <img class="icon" src="../Img/Logos/logo.png"style="width: 38px!important;" alt="Notificaciones">
+        </a>
+        <a class="button is-white" href="./Foro.html">
+          <img class="icon" src="../Img/Header/Mensajes.png"style="width: 38px!important;" alt="Mensajes">
+        </a>
+      <a class="button is-white audioIcono">
+<img class="icon audioIcono" src="../Img/Header/sonido.png" style="width: 38px!important;" alt="Sonido">
+</a>
+      </div>
+    </div>
+  </header>
+  <audio src="../audios/p_38642444_633.mp3" class="iconos audioIcono" style="display: none;"></audio>
+
+
+  <div class="contenido">
+    <section class="hero is-info is-medium">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">Centro de Ayuda</h1>
+          <h2 class="subtitle">Encuentra respuestas a las preguntas más frecuentes</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="box">
+          <h2 class="title is-4">¿Cómo restablecer mi contraseña?</h2>
+          <p>Para restablecer tu contraseña, dirígete a la página de inicio de sesión y haz clic en <strong>"Olvidé mi contraseña"</strong>. Sigue las instrucciones enviadas a tu correo electrónico.</p>
+        </div>
+
+        <div class="box">
+          <h2 class="title is-4">¿Cómo contactar con soporte?</h2>
+          <p>Puedes contactarnos a través del chat en vivo en la plataforma o enviando un correo a <a href="mailto:soporte@aulavirtual.es">soporte@aulavirtual.es</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <iframe class="mapa-interactivo" width="100%" height="300" style="border: none;" allowfullscreen=""
+          loading="lazy"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d566.0469247280691!2d-3.7868639759951024!3d40.53660073722646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4181001992b595%3A0xe86286db3fdc66c3!2sPante%C3%B3n%20de%20la%20familia%20Franco!5e0!3m2!1ses!2ses!4v1739185474913!5m2!1ses!2ses"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer has-background-dark" style="height: 250px;">
+    <div class="container is-flex is-flex-direction-column is-justify-content-center is-align-items-center" style="height: 100%;">
+        <figure class="image is-96x96 mb-4">
+            <img src="../Img/Logos/logo.png" alt="Logo">
+        </figure>
+
+        <div class="is-flex is-justify-content-center is-align-items-center mb-4">
+            <figure class="image is-32x32 mx-2">
+                <img src="../Img/Footer/iconoEmail.png" style="height: 32px!important;" alt="Email">
+            </figure>
+            <figure class="image is-32x32 mx-2">
+                <img src="../Img/Footer/iconoGitHub.png" style="height: 32px!important;" alt="GitHub">
+            </figure>
+            <figure class="image is-32x32 mx-2">
+                <img src="../Img/Footer/iconoInstagram.png" style="height: 32px!important;" alt="Instagram">
+            </figure>
+            <figure class="image is-32x32 mx-2">
+                <img src="../Img/Footer/iconoLinkedin.png" style="height: 32px!important;" alt="LinkedIn">
+            </figure>
+        </div>
+
+        <h3 class="has-text-white is-size-6">
+            © 2004-2025 aulavirtual.es - Servicios de Aula Web Premium, Cloud.
+        </h3>
+    </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/estructura.css" />
+
+    <link rel="stylesheet" href="../styles/Paginas/foro.css">
+    <link rel="stylesheet" href="../../bulma/css/bulma.css">
+    <script src="../JavaScript/Añadirmsg.js" defer></script>
+</head>
+<body>
+  <header class="navbar has-shadow is-flex is-justify-content-space-between px-4 py-2">
+    <div class="navbar-brand">
+      <a class="navbar-item " href="./paginaInicio.html">
+        <img src="../Img/Logos/logoTitulo.png" alt="Logo" id="logo" style="max-height: 100px; width: auto;">
+      </a>
+    </div>
+
+    <div class="navbar-end is-flex is-align-items-center">
+      <figure class="image is-48x48 mr-3">
+        <img class="is-rounded" src="../Img/Header/fotoPerfil.png"  alt="Foto de Perfil">
+      </figure>
+      <div class="buttons">
+        <a class="button is-white" href="./paginaPerfil.html">
+          <img class="icon" src="../Img/Logos/logo.png"style="width: 38px!important;" alt="Notificaciones">
+        </a>
+        <a class="button is-white" href="./Foro.html">
+          <img class="icon" src="../Img/Header/Mensajes.png"style="width: 38px!important;" alt="Mensajes">
+        </a>
+      <a class="button is-white audioIcono">
+<img class="icon audioIcono" src="../Img/Header/sonido.png" style="width: 38px!important;" alt="Sonido">
+</a>
+      </div>
+    </div>
+  </header>
+  <audio src="../audios/p_38642444_633.mp3" class="iconos audioIcono" style="display: none;"></audio>
+
+        <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="footers ">
+                    <h1 class="foroText title is-3 has-text-centered">Foro</h1>
+                    <article class="media">
+                        <figure class="media-left">
+                            <p class="image is-64x64">
+                                <img src="../Img/pedrito.avif" />
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>Pedrito</strong>
+                                    <br />
+                                    Santiago, qué curioso. España nos vuelve a juntar.
+                                    <br />
+                                    <small><a>Like</a> · <a>Reply</a> · 3 hrs</small>
+                                </p>
+                            </div>
+
+                            <!-- Response article -->
+                            <article class="media">
+                                <figure class="media-left">
+                                    <p class="image is-48x48">
+                                        <img src="../Img/santi.jpeg" />
+                                    </p>
+                                </figure>
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>Santi</strong>
+                                            <br />
+                                            Sí, como a ti con Bildu, ERC y todo lo que huela a ruptura
+                                            <br />
+                                            <small><a>Like</a> · <a>Reply</a> · 2 hrs</small>
+                                        </p>
+                                    </div>
+
+                                    <!-- Further responses -->
+                                    <article class="media">
+                                        Vivamus quis semper metus, non tincidunt dolor. Vivamus in mi eu lorem
+                                        cursus ullamcorper sit amet nec massa.
+                                    </article>
+
+                                    <article class="media">
+                                        Morbi vitae diam et purus tincidunt porttitor vel vitae augue.
+                                        Praesent malesuada metus sed pharetra euismod. Cras tellus odio,
+                                        tincidunt iaculis diam non, porta aliquet tortor.
+                                    </article>
+                                </div>
+                            </article>
+
+                            <!-- Another response -->
+                            <article class="media">
+                                <figure class="media-left">
+                                    <p class="image is-48x48">
+                                        <img src="../Img/santi.jpeg" />
+                                    </p>
+                                </figure>
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>Santi </strong>
+                                            <br />
+                                            Sed convallis scelerisque mauris, non pulvinar nunc mattis vel.
+                                            Maecenas varius felis sit amet magna vestibulum euismod malesuada
+                                            cursus libero. Vestibulum ante ipsum primis in faucibus orci luctus
+                                            et ultrices posuere cubilia Curae; Phasellus lacinia non nisl id
+                                            feugiat.
+                                            <br />
+                                            <small><a>Like</a> · <a>Reply</a> · 2 hrs</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </article>
+
+                    <!-- Add comment section -->
+                    <article class="media">
+                        <figure class="media-left">
+                            <p class="image is-64x64">
+                                <img src="../Img/Header/fotoPerfil.png" />
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="field">
+                                <p class="control">
+                                    <textarea class="textarea" id="new-comment" placeholder="Add a comment..."></textarea>
+                                </p>
+                            </div>
+                            <div class="field">
+                                <p class="control">
+                                    <button class="button is-primary" id="post-comment-button">Post comment</button>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer has-background-dark" style="height: 250px;">
+      <div class="container is-flex is-flex-direction-column is-justify-content-center is-align-items-center" style="height: 100%;">
+          <figure class="image is-96x96 mb-4">
+              <img src="../Img/Logos/logo.png" alt="Logo">
+          </figure>
+
+          <div class="is-flex is-justify-content-center is-align-items-center mb-4">
+              <figure class="image is-32x32 mx-2">
+                  <img src="../Img/Footer/iconoEmail.png" style="height: 32px!important;" alt="Email">
+              </figure>
+              <figure class="image is-32x32 mx-2">
+                  <img src="../Img/Footer/iconoGitHub.png" style="height: 32px!important;" alt="GitHub">
+              </figure>
+              <figure class="image is-32x32 mx-2">
+                  <img src="../Img/Footer/iconoInstagram.png" style="height: 32px!important;" alt="Instagram">
+              </figure>
+              <figure class="image is-32x32 mx-2">
+                  <img src="../Img/Footer/iconoLinkedin.png" style="height: 32px!important;" alt="LinkedIn">
+              </figure>
+          </div>
+
+          <h3 class="has-text-white is-size-6">
+              © 2004-2025 aulavirtual.es - Servicios de Aula Web Premium, Cloud.
+          </h3>
+      </div>
+  </footer>
+</body>
+</html>

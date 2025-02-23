@@ -1,0 +1,309 @@
+@use "../../../bulma/sass/utilities/mixins" as mixins;
+
+@import "../estructura";
+
+.PaginaSeccion {
+  color: white;
+  background-color: #444;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+
+  .foroText {
+    font-family: "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-align: center;
+
+    text-transform: uppercase;
+
+    line-height: 1.4;
+  }
+
+  .Titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+
+    #menu {
+      position: absolute;
+      height: 15%;
+      right: 15px;
+    }
+
+    margin: 20px;
+
+  /*  .dropdown {
+      margin-bottom: 0px !important;
+      padding-bottom: 0px !important;
+
+      img {
+        height: 100px !important;
+      }
+      .dropdown-trigger {
+        height: 0px !important;
+      }
+      margin-top: 170px;
+      .dropdown-menu {
+        position: absolute !important;
+        margin-top: 0 !important;
+      }
+    }
+      */
+      .dropdown {
+        position: relative; /* Asegura que el menú se posicione en relación con este div */
+        margin: 0 !important; /* Elimina márgenes adicionales */
+        padding: 0 !important;
+        margin-top: 170px !important;
+        margin-right: 60px !important;
+
+    }
+    
+    .dropdown-trigger img {
+        height: 100px !important; /* Ajusta según el tamaño necesario */
+        cursor: pointer;
+    }
+    
+    .dropdown-menu {
+        position: absolute !important;
+        top: 75px; /* Ajusta esta distancia según lo necesites */
+        left: 0;
+        
+        margin-top: 0 !important;
+        transform: translateY(0); /* Ajusta si sigue estando desplazado */
+        z-index: 1000; /* Asegura que esté por encima de otros elementos */
+        display: none; /* Oculta el menú por defecto */
+    }
+    
+    .dropdown.is-active .dropdown-menu {
+        display: block; /* Muestra el menú cuando está activo */
+    }
+    @include mixins.mobile {
+      .dropdown {
+        position: relative; /* Asegura que el menú se posicione en relación con este div */
+        margin: 0 !important; /* Elimina márgenes adicionales */
+        padding: 0 !important;
+        margin-top: 260px !important;
+        margin-right: 60px !important;
+
+    }
+    
+    .dropdown-trigger img {
+        height: 25% !important; /* Ajusta según el tamaño necesario */
+        cursor: pointer;
+    }
+    
+    .dropdown-menu {
+        position: absolute !important;
+        top: 75px; /* Ajusta esta distancia según lo necesites */
+        left: 0;
+        
+        margin-top: 0 !important;
+        transform: translateY(0); /* Ajusta si sigue estando desplazado */
+        z-index: 1000; /* Asegura que esté por encima de otros elementos */
+        display: none; /* Oculta el menú por defecto */
+    }
+    
+    .dropdown.is-active .dropdown-menu {
+        display: block; /* Muestra el menú cuando está activo */
+    }
+    }
+  }
+
+  .mapa-interactivo {
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    border-radius: 15px;
+    box-shadow: 0 20px 80px rgba(33, 36, 215, 0.2);
+
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .mapa-interactivo:hover {
+    transform: scale(1.05);
+  }
+
+  @include mixins.mobile {
+    .Titulo {
+      font-size: 20px;
+
+      img {
+        height: 10%;
+      }
+    }
+  }
+
+  .Asignatura {
+    background-color: #333;
+padding-top: 30px;
+    width: 80%;
+    height: auto;
+    border: solid 3px #2361a8;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+
+    .TituloSeccion {
+      width: 100%;
+      display: flex;
+      align-items: start;
+
+      h1 {
+        margin-left: 5%;
+        font-size: 20px;
+      }
+
+      @include mixins.mobile {
+        h1 {
+          margin-left: 5%;
+          font-size: 15px;
+        }
+      }
+    }
+
+    .linea {
+      width: 90%;
+      border: solid 0.5px #ffffff;
+    }
+
+    .Seccion {
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+
+      @include mixins.mobile {
+        flex-direction: column;
+      }
+
+      .descargable {
+        width: 60%;
+
+        @include mixins.mobile {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          width: 100%;
+        }
+
+        .Tarjeta {
+          width: 100%;
+          border-radius: 20px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin: 10px;
+          height: 50px;
+          margin-left: 5%;
+
+          background-color: #2361a8;
+
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            background-color: #104889;
+            transition: all 0.3s ease;
+          }
+
+          @include mixins.mobile {
+            height: 30px;
+
+            width: 80%;
+          }
+
+          img {
+            margin: 10px;
+            height: 40px;
+
+            @include mixins.mobile {
+              height: 20px;
+            }
+          }
+
+          h3 {
+            font-size: 30px;
+
+            @include mixins.mobile {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+
+      .contenido {
+        margin-left: 100px;
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        iframe {
+          width: 80%;
+          height: 200px;
+          margin-right: 80px;
+
+          @include mixins.mobile {
+            width: 150%;
+            margin-left: 150px;
+            height: 100px;
+          }
+        }
+      }
+    }
+  }
+
+  .botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      margin: 10px;
+      color: #ffffff;
+      border-radius: 5px;
+      width: 100px;
+    }
+  }
+
+  .añadir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    article {
+      margin: 15px;
+    }
+  }
+
+  .footers {
+    h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 80px;
+      color: #2361a8;
+    }
+    box-shadow: 0 4px 29px rgba(23, 90, 172, 0.2);
+    padding: 20px;
+    margin-top: 20px;
+    width: 75%;
+  }
+}

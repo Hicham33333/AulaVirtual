@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="../../bulma/css/bulma.css">
+  <link rel="stylesheet" href="../styles/estructura.css" />
+
+  <script src="../JavaScript/redireccion.js" defer></script>
+  <script src="../JavaScript/reproducirAudio.js" defer></script>
+  
+</head>
+<body>
+    <header class="navbar has-shadow is-flex is-justify-content-space-between px-4 py-2">
+        <div class="navbar-brand">
+          <a class="navbar-item " href="./paginaInicio.html">
+            <img src="../Img/Logos/logoTitulo.png" alt="Logo" id="logo" style="max-height: 100px; width: auto;">
+          </a>
+        </div>
+    
+        <div class="navbar-end is-flex is-align-items-center">
+          <figure class="image is-48x48 mr-3">
+            <img class="is-rounded" src="../Img/Header/fotoPerfil.png"  alt="Foto de Perfil">
+          </figure>
+          <div class="buttons">
+            <a class="button is-white" href="./paginaPerfil.html">
+              <img class="icon" src="../Img/Logos/logo.png"style="width: 38px!important;" alt="Notificaciones">
+            </a>
+            <a class="button is-white" href="./Foro.html">
+              <img class="icon" src="../Img/Header/Mensajes.png"style="width: 38px!important;" alt="Mensajes">
+            </a>
+          <a class="button is-white audioIcono">
+  <img class="icon audioIcono" src="../Img/Header/sonido.png" style="width: 38px!important;" alt="Sonido">
+</a>
+          </div>
+        </div>
+      </header>
+      <audio src="../audios/p_38642444_633.mp3" class="iconos audioIcono" style="display: none;"></audio>
+
+      <section class="section">
+        <div class="container">
+            <h1 class="title has-text-centered">
+                Mi Perfil
+            </h1>
+
+            <div class="columns is-centered">
+                <div class="column is-4">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-128x128">
+                                        <img class="is-rounded" src="../Img/Header/fotoPerfil.png" alt="Foto de Perfil">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">Jacinto</p>
+                                    <p class="subtitle is-6">@jJacint</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <p><strong>Biografía:</strong></p>
+                                <p>Estudiante de DAW que tiene como unica prioridad sobrevivir lo medida de lo posible </p>
+
+                                <br>
+
+                                <p><strong>Email:</strong> jacint@elFaker.es</p>
+                                <p><strong>Fecha de creación:</strong> 15 de Enero, 2023</p>
+
+                                <div class="has-text-centered mt-4">
+                                    <a href="./ayuda.html" class="button is-primary">Ayuda</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-6">
+                    <div class="card">
+                        <div class="card-content">
+                            <h2 class="title is-5">Mis Cursos</h2>
+                            <div class="content">
+                                <ul>
+                                    <li><strong>Desarrollo Web Avanzado</strong> - En curso</li>
+                                    <li><strong>Interfaces</strong> - Completado</li>
+                                    <li><strong>Ingles</strong> - En curso</li>
+                                    <li><strong>Base De Datos</strong> - Imposible 💀</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mt-4">
+                        <div class="card-content">
+                            <h2 class="title is-5">Actividad Reciente</h2>
+                            <div class="content">
+                                <ul>
+                                    <li><strong>Participación en Foro:</strong> Comentario: como anulo matricula.</li>
+                                    <li><strong>Entrega de Tarea:</strong> Mi primer juego con Pygame.</li>
+                                    <li><strong>Nuevo Curso:</strong> Ingles.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer has-background-dark" style="height: 250px;">
+      <div class="container is-flex is-flex-direction-column is-justify-content-center is-align-items-center" style="height: 100%;">
+          <figure class="image is-96x96 mb-4">
+              <img src="../Img/Logos/logo.png" alt="Logo">
+          </figure>
+
+          <div class="is-flex is-justify-content-center is-align-items-center mb-4">
+              <figure class="image is-32x32 mx-2">
+                  <img src="../Img/Footer/iconoEmail.png" style="height: 32px!important;" alt="Email">
+              </figure>
+              <figure class="image is-32x32 mx-2">
+                  <img src="../Img/Footer/iconoGitHub.png" style="height: 32px!important;" alt="GitHub">
+              </figure>
+              <figure class="image is-32x32 mx-2">
+                  <img src="../Img/Footer/iconoInstagram.png" style="height: 32px!important;" alt="Instagram">
+              </figure>
+              <figure class="image is-32x32 mx-2">
+                  <img src="../Img/Footer/iconoLinkedin.png" style="height: 32px!important;" alt="LinkedIn">
+              </figure>
+          </div>
+
+          <h3 class="has-text-white is-size-6">
+              © 2004-2025 aulavirtual.es - Servicios de Aula Web Premium, Cloud.
+          </h3>
+      </div>
+  </footer>
+</body>
+</html>
